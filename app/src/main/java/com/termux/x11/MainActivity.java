@@ -1,4 +1,4 @@
-lpackage com.termux.x11;
+package com.termux.x11;
 
 import static android.Manifest.permission.WRITE_SECURE_SETTINGS;
 import static android.content.pm.PackageManager.PERMISSION_GRANTED;
