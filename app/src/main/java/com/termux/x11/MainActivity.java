@@ -1,4 +1,4 @@
-package com.termux.x11;
+lpackage com.termux.x11;
 
 import static android.Manifest.permission.WRITE_SECURE_SETTINGS;
 import static android.content.pm.PackageManager.PERMISSION_GRANTED;
@@ -277,7 +277,7 @@ public class MainActivity extends AppCompatActivity implements View.OnApplyWindo
                 buttons.setVisibility(View.GONE);
                 visibility.setAlpha(menuUnselectedTrasparency);
                 int m = TouchInputHandler.STYLUS_INPUT_HELPER_MODE;
-                visibility.setText(m == 1 ? "L" : (m == 3 ? "R" : "U")));
+                visibility.setText(m == 1 ? "L" : (m == 2 ? "R" : "U"));
             } else {
                 buttons.setVisibility(View.VISIBLE);
                 visibility.setAlpha(menuUnselectedTrasparency);
