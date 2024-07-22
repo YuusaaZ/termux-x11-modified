@@ -406,8 +406,6 @@ public class MainActivity extends AppCompatActivity implements View.OnApplyWindo
                 case MotionEvent.ACTION_POINTER_DOWN:
                     getLorieView().sendMouseEvent(0, 0, b, true, true);
                     v.setPressed(true);
-
-                        p
                     break;
                 case MotionEvent.ACTION_UP:
                 case MotionEvent.ACTION_POINTER_UP:
@@ -429,4 +427,5 @@ public class MainActivity extends AppCompatActivity implements View.OnApplyWindo
                 switch(e.getAction()) {
                     case MotionEvent.ACTION_DOWN:
                         primaryLayer.getLocationInWindow(startPosition);
-                        startOffset[0] = e.getX
+                        startOffset[0] = e.getX();
+             
