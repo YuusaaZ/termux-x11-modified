@@ -142,23 +142,6 @@
                 tools:ignore="HardcodedText,PxUsage,SmallSp" />
 
             <Button
-                android:id="@+id/button_middle_click"
-                android:layout_width="64px"
-                android:layout_height="64px"
-                android:minWidth="44dip"
-                android:minHeight="22dip"
-                android:padding="0px"
-                android:paddingStart="0px"
-                android:paddingLeft="0px"
-                android:paddingTop="0px"
-                android:paddingEnd="0px"
-                android:paddingRight="0px"
-                android:paddingBottom="0px"
-                android:text="M"
-                android:textSize="8sp"
-                tools:ignore="HardcodedText,PxUsage,SmallSp" />
-
-            <Button
                 android:id="@+id/button_right_click"
                 android:layout_width="64px"
                 android:layout_height="64px"
@@ -208,29 +191,25 @@
                 android:paddingRight="0px"
                 android:paddingBottom="0px"
                 android:text="L"
-                android:textColor="@android:color/black"
+                android:textColor="@android:color/white"
                 android:background="@drawable/mouse_buttons"
                 android:textSize="8sp"
                 tools:ignore="HardcodedText,PxUsage,SmallSp" />
 
-            <Button
-                android:id="@+id/mouse_button_middle_click"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:minWidth="48dp"
-                android:minHeight="48dp"
-                android:padding="0px"
-                android:paddingStart="0px"
-                android:paddingLeft="0px"
-                android:paddingTop="0px"
-                android:paddingEnd="0px"
-                android:paddingRight="0px"
-                android:paddingBottom="0px"
-                android:text="M"
-                android:textColor="@android:color/black"
-                android:background="@drawable/mouse_buttons"
-                android:textSize="8sp"
-                tools:ignore="HardcodedText,PxUsage,SmallSp" />
+            <ImageButton
+            android:id="@+id/mouse_buttons_position"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:minWidth="40dp"
+            android:minHeight="40dp"
+            android:adjustViewBounds="true"
+            android:padding="2dp"
+            android:scaleType="fitCenter"
+            android:src="@android:drawable/ic_menu_mylocation"
+            android:contentDescription="MOVE"
+            android:layout_gravity="center"
+            android:background="@drawable/mouse_buttons"
+            tools:ignore="HardcodedText,PxUsage,SmallSp" />
 
             <Button
                 android:id="@+id/mouse_button_right_click"
@@ -246,26 +225,11 @@
                 android:paddingRight="0px"
                 android:paddingBottom="0px"
                 android:text="R"
-                android:textColor="@android:color/black"
+                android:textColor="@android:color/white"
                 android:background="@drawable/mouse_buttons"
                 android:textSize="8sp"
                 tools:ignore="HardcodedText,PxUsage,SmallSp" />
         </LinearLayout>
-
-        <ImageButton
-            android:id="@+id/mouse_buttons_position"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:minWidth="40dp"
-            android:minHeight="40dp"
-            android:adjustViewBounds="true"
-            android:padding="2dp"
-            android:scaleType="fitCenter"
-            android:src="@android:drawable/ic_menu_mylocation"
-            android:contentDescription="MOVE"
-            android:layout_gravity="center"
-            android:background="@drawable/mouse_buttons"
-            tools:ignore="HardcodedText,PxUsage,SmallSp" />
     </LinearLayout>
 
     <androidx.viewpager.widget.ViewPager
@@ -283,3 +247,4 @@
         android:background="@android:color/transparent"
         android:layout_gravity="bottom|center" />
 </FrameLayout>
+                
