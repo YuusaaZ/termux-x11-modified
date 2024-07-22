@@ -277,7 +277,7 @@ public class MainActivity extends AppCompatActivity implements View.OnApplyWindo
                 buttons.setVisibility(View.GONE);
                 visibility.setAlpha(menuUnselectedTrasparency);
                 int m = TouchInputHandler.STYLUS_INPUT_HELPER_MODE;
-                visibility.setText(m == 1 ? "L" : (m == 2 ? "M" : (m == 3 ? "R" : "U")));
+                visibility.setText(m == 1 ? "L" : (m == 3 ? "R" : "U")));
             } else {
                 buttons.setVisibility(View.VISIBLE);
                 visibility.setAlpha(menuUnselectedTrasparency);
@@ -406,6 +406,8 @@ public class MainActivity extends AppCompatActivity implements View.OnApplyWindo
                 case MotionEvent.ACTION_POINTER_DOWN:
                     getLorieView().sendMouseEvent(0, 0, b, true, true);
                     v.setPressed(true);
+
+                        p
                     break;
                 case MotionEvent.ACTION_UP:
                 case MotionEvent.ACTION_POINTER_UP:
